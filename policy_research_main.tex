@@ -5,6 +5,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{setspace}
 \usepackage{graphicx}
+\usepackage{natbib} % <--- Added this to fix the square brackets!
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{booktabs}
@@ -17,15 +18,16 @@
     linkcolor=black,
     filecolor=black,      
     urlcolor=blue,
+    citecolor=black, % <--- Added this to kill the neon green!
     pdftitle={Dual-Use ICT Facilities -- Maigo},
-} 
+}
 
 \begin{document}
 
 % --- TITLE BLOCK ---
 \begin{center}
     \Large\textbf{Institutionalizing Dual-Use ICT Facilities: A Public-Private Partnership for Technical-Vocational Education in the Municipality of Maigo} \\[1.5em]
-    \large \textbf{Jemar John J Lumingkit\textsuperscript{1*}} \\[0.5em]
+    \large \textbf{Jemar John J Lumingkit\textsuperscript{1}} \\[0.5em]
     \normalsize \textsuperscript{1}Mindanao State University – Iligan Institute of Technology \\
     *Iligan City, Philippines
 \end{center}
@@ -46,6 +48,8 @@ Employing a qualitative case study design, this research evaluates the legal, ec
 \newpage
 
 % --- MODULAR CHAPTER INCLUSIONS ---
+\input{sections/exec_summary}
+\newpage
 \input{sections/chap1_main}
 \newpage
 \input{sections/chap2_main}
