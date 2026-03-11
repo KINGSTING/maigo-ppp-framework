@@ -1,0 +1,68 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+% --- FORMATTING ---
+\onehalfspacing
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+    pdftitle={Dual-Use ICT Facilities -- Maigo},
+} 
+
+\begin{document}
+
+% --- TITLE BLOCK ---
+\begin{center}
+    \Large\textbf{Institutionalizing Dual-Use ICT Facilities: A Public-Private Partnership for Technical-Vocational Education in the Municipality of Maigo} \\[1.5em]
+    \large \textbf{Jemar John J Lumingkit\textsuperscript{1*}} \\[0.5em]
+    \normalsize \textsuperscript{1}Mindanao State University – Iligan Institute of Technology \\
+    *Iligan City, Philippines
+\end{center}
+\vspace{1em}
+
+% --- ABSTRACT ---
+\begin{abstract}
+\noindent This policy proposal addresses a critical infrastructure paradox in Maigo, Lanao del Norte: a severe deficit of Information and Communication Technology (ICT) laboratories for Technical-Vocational Education and Training (TVET) programs at MSU-MCEST and TESDA, juxtaposed against the daytime underutilization of local internet cafés. While public institutions face prohibitive capital expenditure (CapEx) constraints, local Micro, Small, and Medium Enterprises (MSMEs) possess high-performance computing assets that sit idle during academic hours.
+
+Anchored in Collaborative Governance and the Philippine Public-Private Partnership (PPP) Code (RA 11966), this study proposes the institutionalization of ``Dual-Use ICT Facilities.'' This service-contracting framework enables the Local Government Unit (LGU) to lease private cybercafés as accredited training micro-laboratories. To ensure pedagogical integrity and cybersecurity, the proposal mandates a Diskless (PXE-Boot) Multiple Image architecture. This mechanism deploys a restricted ``Educational Image'' during school hours---effectively segregating recreational software---before reverting to ``Commercial Mode'' for nighttime operations.
+
+Employing a qualitative case study design, this research evaluates the legal, economic, and technical feasibility of the proposed framework. The ultimate output is a comprehensive Municipal Ordinance that delivers a Zero-CapEx solution for public education, stabilizes MSME revenue streams, and establishes a scalable blueprint for rural digital resilience.
+
+\vspace{0.5em}
+\noindent \textbf{Keywords---}Dual-Use, Public-Private Partnership (PPP), Technical-Vocational Education (TVET), MSME Resilience, Collaborative Governance, Diskless Architecture.
+\end{abstract}
+
+\newpage
+
+% --- MODULAR CHAPTER INCLUSIONS ---
+\input{sections/chap1_main}
+\newpage
+\input{sections/chap2_main}
+\newpage
+\input{sections/chap3_main}
+\newpage
+\input{sections/chap4_main}
+\newpage
+\input{sections/chap5_main}
+\newpage
+\input{sections/chap6_main}
+\newpage
+
+% --- BIBLIOGRAPHY ---
+\newpage
+\addcontentsline{toc}{section}{REFERENCES}
+\bibliographystyle{apalike}
+\bibliography{bibliography_policy}
+
+\end{document}
