@@ -1,7 +1,64 @@
 \section{The Policy Recommendations and Implementation}
 
 \subsection{The Proposed Municipal Ordinance}
+To formalize the Public-Private Partnership (PPP) and ensure continuous funding, the Sangguniang Bayan of Maigo must enact a local law. Below is the proposed legislative draft:
 
-\subsection{The Service Level Agreement (SLA) guidelines}
+\vspace{1em}
+\begin{center}
+    \textbf{DRAFT MUNICIPAL ORDINANCE NO. \_\_\_ - 2026} \\
+    \vspace{0.5em}
+    \textbf{AN ORDINANCE INSTITUTIONALIZING THE DUAL-USE ICT FACILITY PROGRAM, ESTABLISHING A PUBLIC-PRIVATE PARTNERSHIP WITH LOCAL INTERNET CAFÉS FOR TECHNICAL-VOCATIONAL EDUCATION, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES.}
+\end{center}
+
+\vspace{0.5em}
+\noindent \textbf{WHEREAS,} Section 16 of Republic Act No. 7160 (Local Government Code) mandates local government units to promote the general welfare, enhance economic prosperity, and improve public morals;
+
+\noindent \textbf{WHEREAS,} Republic Act No. 11966 (PPP Code of the Philippines) empowers LGUs to engage in service-contracting with the private sector to deliver public services efficiently;
+
+\noindent \textbf{WHEREAS,} there is an acute shortage of capital-intensive ICT laboratories for TVET and university students in the Municipality of Maigo, alongside the severe daytime economic underutilization of local internet cafés (MSMEs);
+
+\noindent \textbf{BE IT ORDAINED BY THE SANGGUNIANG BAYAN OF MAIGO:}
+
+\vspace{0.5em}
+\noindent \textbf{Section 1. Title.} This Ordinance shall be known as the \textit{"Maigo Dual-Use ICT Facility Act of 2026."}
+
+\noindent \textbf{Section 2. Declaration of Policy.} It is the policy of the Municipality of Maigo to bridge the digital divide and support local MSME resilience through collaborative governance, transitioning from a procurement-heavy infrastructure model to a sustainable service-contracting model.
+
+\noindent \textbf{Section 3. The Dual-Use Program.} The LGU shall formally lease accredited private internet cafés during standard academic hours (8:00 AM to 5:00 PM) to serve as public training micro-laboratories for MSU-MCEST and TESDA scholars. 
+
+\noindent \textbf{Section 4. Accreditation and Technical Standards.} To qualify for the program, private MSMEs must utilize a \textbf{Diskless (PXE-Boot) Multiple Image architecture}. Participating facilities must maintain an isolated "Educational Image" that completely restricts access to recreational games and non-educational websites during leased hours.
+
+\noindent \textbf{Section 5. Exemption from Anti-Truancy Apprehension.} Accredited facilities operating under the "Educational Image" during official leased hours are hereby exempted from daytime anti-truancy ordinances, provided that students present their official LGU or University access passes.
+
+\noindent \textbf{Section 6. Appropriations.} The Municipal Government shall allocate an initial funding of \textit{[Insert Amount]} from the Special Education Fund (SEF) or the General Fund to cover the hourly lease vouchers for the first fiscal year of implementation.
+
+\subsection{The Service Level Agreement (SLA) Guidelines}
+The ordinance establishes the law, but the SLA establishes the daily business rules between the Maigo LGU and the internet café owner. The SLA must explicitly define the following operational boundaries:
+
+\begin{itemize}
+    \item \textbf{LGU / Educational Institution Duties:} The school's IT Department is strictly responsible for building, updating, and patching the "Educational VHD (Virtual Hard Disk) Image." The LGU commits to paying lease vouchers within 15 working days of the billing cycle.
+    \item \textbf{MSME (Café Owner) Duties:} The private partner is responsible for physical security, electricity, internet bandwidth, and ensuring the server boots the correct "Educational Image" before 8:00 AM. 
+    \item \textbf{Purge Protocol:} The SLA mandates a daily "Reboot-to-Restore" or write-back purge. This ensures any user data, browsing history, or malware introduced by a student is completely wiped the moment the PC restarts, protecting both the student's privacy and the MSME's hardware.
+\end{itemize}
 
 \subsection{The Risk Allocation Matrix}
+A core tenet of the Philippine PPP Code is equitable risk distribution. Table 1 outlines the allocation of responsibilities under the Dual-Use framework, proving to the Commission on Audit (COA) that the government is protected from private hardware liabilities.
+
+\begin{table}[htbp]
+\centering
+\caption{Risk Allocation Matrix for the Dual-Use ICT Facility Framework}
+\vspace{0.5em}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{4.5cm}|>{\raggedright\arraybackslash}p{2cm}|X|}
+\hline
+\textbf{Risk Category} & \textbf{Potential Event} & \textbf{Risk Owner} & \textbf{Mitigation \& SLA Protocol} \\
+\hline
+\textbf{Hardware \& Utility} & Server failure, internet outage, or power loss during class. & Private MSME & MSME must provide Uninterruptible Power Supplies (UPS). LGU receives pro-rated refunds for downtime. \\
+\hline
+\textbf{Software \& Cyber} & Corruption of the ``Educational Image'' or malware infection. & LGU / School IT & School IT maintains exclusive admin rights to the Educational VHD. Reboot-to-Restore purges daily risks. \\
+\hline
+\textbf{Operational} & Student damages a monitor, peripheral, or physical property. & LGU / School & LGU compensates the MSME based on a pre-agreed depreciation table, followed by school disciplinary action. \\
+\hline
+\textbf{Financial} & Delayed LGU lease payments to the MSME. & LGU & Standard PPP Code late payment interest applies to protect the small business owner. \\
+\hline
+\end{tabularx}
+\end{table}
